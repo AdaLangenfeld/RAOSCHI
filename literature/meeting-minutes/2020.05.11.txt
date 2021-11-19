@@ -1,0 +1,71 @@
+--------------------------
+Date:     11.05.2020
+Time:     14:00
+Location: Slack Call
+
+Participating Persons:
+Susie Xi Rao
+Johannes Rausch
+Livio Kaiser
+--------------------------
+
+--------------------------
+* Review of Achievements *
+--------------------------
+
+Livio:
+- Build first proof of concept for bounding boxes
+  > Implemented creation of auxiliary file and extraction of bounding boxes. (See sample files)
+
+--------------------------
+* Current Status         *
+--------------------------
+
+* Currently active tasks
+Livio:
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > DeExcelarator (Getting segmentation of excel files into table regions)
+
+* Encountered problems, questions, difficulties, etc.
+- What should we do with content which is larger than the cell size? In that case the bounding box
+  > Color text as well to get the bounding box. (Either size of cell or length of text)
+    > win32 has problems with that much font colors, not sure how to be able to solve this.
+- How do we need to define the content of a page?
+  > Page property to box.
+- What should happen if a cell ranges over two or more pages?
+  > Create a new bounding box for the new page.
+
+--------------------------
+* Agenda                 *
+--------------------------
+
+Livio:
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > DeExcelarator (Getting segmentation of excel files into table regions)
+    > Merge info from DeExcelerator with output of current tool.
+
+--------------------------
+* ToDos                  *
+--------------------------
+
+Livio:
+- Setup Thesis template: Google for existing MT and use it as template.
+- Check actual error code of win10 fonts
+- JSON file:
+  > Add row and col range (change it in property and add additionaly key row and col range)
+  > Create second bounding box for cells which range over more than one page
+  > Add page property box element.
+  > Change format of bounding box: [x, y, width, height]
+- Check performance per Document, find throttling parts of the code. (10s per Document would be perfect)
+- Save unedited PDF (generated from Excel file)
+- Recognizing table structure - DeExcelerator
+
+--------------------------
+* Next Meeting           *
+--------------------------
+
+18.05.2020, 14:00 Slack Call

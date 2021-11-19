@@ -1,0 +1,57 @@
+--------------------------
+Date:     25.05.2020
+Time:     14:00
+Location: Slack Call
+
+Participating Persons:
+Susie Xi Rao
+Johannes Rausch
+Livio Kaiser
+--------------------------
+
+--------------------------
+* Review of Achievements *
+--------------------------
+
+Livio:
+- Check actual error code of win10 fonts
+- JSON file:
+  > Add row and col range (change it in property and add additionaly key row and col range)
+  > Create second bounding box for cells which range over more than one page
+  > Add page property box element.
+  > Change format of bounding box: [x, y, width, height]
+- Check performance per Document, find throttling parts of the code. (10s per Document would be perfect)
+- Save unedited PDF (generated from Excel file)
+
+--------------------------
+* Current Status         *
+--------------------------
+
+* Currently active tasks
+Livio:
+- Recognizing table structure - DeExcelerator
+
+* Encountered problems, questions, difficulties, etc.
+- DeExcelerator has problems with several Tables in one sheet (Shantou)
+
+--------------------------
+* Agenda                 *
+--------------------------
+
+Livio:
+- Recognizing table structure - DeExcelerator
+- Generate larger dataset with data
+
+--------------------------
+* ToDos                  *
+--------------------------
+
+Livio:
+- Setup Thesis template: Google for existing MT and use it as template.
+- Recognizing table structure - DeExcelerator
+
+--------------------------
+* Next Meeting           *
+--------------------------
+
+08.06.2020, 14:00 Slack Call

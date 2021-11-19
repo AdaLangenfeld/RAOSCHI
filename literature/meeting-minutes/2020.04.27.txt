@@ -1,0 +1,73 @@
+--------------------------
+Date:     27.04.2020
+Time:     14:00	
+Location: Slack Call
+
+Participating Persons:
+Susie Xi Rao
+Johannes Rausch
+Livio Kaiser
+--------------------------
+
+--------------------------
+* Review of Achievements *
+--------------------------
+
+Livio:
+- Further familiarization
+- Check source code of machine-readable file shantou2017_3_1.pdf
+  > The file only consists of encoded streams, thus we cannot use the PDF source file as additional information.
+- Check code of TableBank paper in Detail.
+
+Johannes:
+- Send sample auxiliary file to Livio
+
+--------------------------
+* Current Status         *
+--------------------------
+
+* Currently active tasks
+Livio:
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > Recognition algorithm for identifying tables / headers etc.
+    > Currently it is manually implemented, as some inputs are missing, 
+      Livio already created possible concepts and thought about pro's and con's of these concepts.
+
+* Encountered problems, questions, difficulties, etc.
+- A table needs the data to be in the same row, such that it can reliably 
+- Recognition algorithm
+  > On what information should we rely? Should we use Formatting, or only the tabular structure of the sheet?
+    > Use Formatting when possible, might want to use deExecleration framework. (Starting point)
+    > Clearly a new sheet creates a new table, the rest is to discuss
+- Bounding box - how is the bounding box exactly represented in the JSON file? (left_x, left_y, right_x, right_y) position on page?
+- JSON file structure
+  > What is the use of "unk" and "meta" object, what should be put into these objects?
+  > Are page_number objects needed? As far as Livio sees it, they won't be necessary for the Excel generated documents.
+
+--------------------------
+* Agenda                 *
+--------------------------
+
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > Implement recognition algorithm for identifying tables / headers etc.
+
+> DeExcelarator (Getting segmentation of excel files into table regions)
+
+--------------------------
+* ToDos                  *
+--------------------------
+
+Livio:
+- Setup Thesis template: Google for existing MT and use it as template.
+- Build first proof of concept for bounding boxes
+- TableBank: Send Problems with code of TableBank to Slack, such that these can be fixed as soon as possible.
+
+--------------------------
+* Next Meeting           *
+--------------------------
+
+04.05.2020, 14:00 Slack Call.

@@ -1,0 +1,61 @@
+--------------------------
+Date:     04.05.2020
+Time:     14:00
+Location: Slack Call
+
+Participating Persons:
+Susie Xi Rao
+Johannes Rausch
+Livio Kaiser
+--------------------------
+
+--------------------------
+* Review of Achievements *
+--------------------------
+
+Livio:
+- Build first proof of concept for bounding boxes
+
+--------------------------
+* Current Status         *
+--------------------------
+
+* Currently active tasks
+Livio:
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > Implement recognition algorithm for identifying tables / headers etc.
+  > DeExcelarator (Getting segmentation of excel files into table regions)
+
+* Encountered problems, questions, difficulties, etc.
+- What should we do with content which is larger than the cell size? In that case the bounding box
+  > Color text as well to get the bounding box. (Either size of cell or length of text)
+    > win32 has problems with that much font colors, not sure how to be able to solve this.
+
+--------------------------
+* Agenda                 *
+--------------------------
+
+Livio:
+- Build first proof of concept for bounding boxes
+Excel to PDF + auxiliary file (JSON), where auxiliary file contains cell location, content and their position in the table.
+  > Implement tool in python
+  > Implement recognition algorithm for identifying tables / headers etc.
+  > DeExcelarator (Getting segmentation of excel files into table regions)
+
+--------------------------
+* ToDos                  *
+--------------------------
+
+Livio:
+- Setup Thesis template: Google for existing MT and use it as template.
+- Build first proof of concept for bounding boxes
+- Send Samples of output of first version of tool to Slack
+- Recognizing table structure - DeExcelerator
+
+--------------------------
+* Next Meeting           *
+--------------------------
+
+11.05.2020, 14:00 Slack Call
